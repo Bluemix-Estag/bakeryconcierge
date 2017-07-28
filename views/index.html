@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NodeJS Starter Application</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/materialize.min.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="row">
+      <div id="audio"></div>
+      <div class="col s4 offset-s4 center-align">
+        <div class="camera">
+          <video id="video">Video stream not available.</video>
+        </div>
+      </div>
+      <div class="col s4 offset-s4 center-align">
+        <canvas id="canvas">
+        </canvas>
+      </div>
+      <div class="col s4 offset-s4 center-align">
+        <div class="output">
+          <img id="photo">
+        </div>
+      </div>
+      <div class="col s2 offset-s5 ">
+        <div class="col s12">
+          <button id="startbutton" class="btn btn-small btn-success">Take photo</button>
+        </div>
+      </div>
+      <div class="col s12">
+        <div class="progress hide">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content" style="text-align:center">
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="/scripts/materialize.min.js"></script>
+  <script src="/scripts/util.js"></script>
+  <script src="/scripts/webcam.js"></script>
+</body>
+
+</html>
